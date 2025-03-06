@@ -35,6 +35,10 @@ header {
   list-style-type: none;
 }
 
+.navigation a { 
+  text-decoration: none;
+}
+
 main {
   display: grid;
   grid-column: 1 / 4;
