@@ -20,6 +20,12 @@ header {
   grid-column: 1 / 4;
 }
 
+main {
+  grid-column: 1 / 4;
+  height: 100%;
+  display: grid;
+}
+
 footer {
   height: 20%;
   grid-column: 1/4;
