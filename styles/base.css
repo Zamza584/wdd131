@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root {
   --border-color: #2f4550;
   --primary-color: #2f4550;
@@ -57,10 +59,9 @@ nav {
 main {
   display: grid;
   grid-row: 2 / 3;
-  grid-template: 0.2fr 500px / repeat(5, 1fr);
+  grid-template: 0.2fr 600px / repeat(5, 1fr);
   max-width: 1100px;
   margin: auto;
-  height: 600px;
   gap: 1rem;
   padding: 1rem;
 }
@@ -77,6 +78,7 @@ main > h1 {
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .card > h2 {
@@ -95,8 +97,19 @@ main > h1 {
   grid-column: 4/6;
 }
 
+#web-dev-resources a {
+  display: block;
+  padding: 0.2rem;
+  text-decoration: none;
+  color: var(--border-color);
+}
+
 .content {
   padding: 1rem 1.5rem 0;
+}
+
+.content img { 
+  margin-bottom: 1rem;
 }
 
 .content > p {
