@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Current Country</title>
+    <meta
+      name="description"
+      content="Current country I live in Manuel Zamalloa"
+    />
+    <meta name="author" content="Manuel Zamalloa" />
+    <link rel="stylesheet" href="styles/place.css" />
+    <link rel="stylesheet" href="styles/place-large.css" />
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1 class="title">Peru</h1>
+      </div>
+    </header>
+    <main>
+      <div class="hero">
+        <picture>
+          <source
+            media="(min-width: 1000px)"
+            srcset="images/machu-picchu-large.webp"
+          />
+          <source media="(min-width: 500px)" srcset="" />
+          <img
+            class="hero-img"
+            src="images/machu-picchu-large.webp"
+            alt="country"
+            width="1000"
+            height="500"
+          />
+        </picture>
+      </div>
+      <div id="data-content" class="content">
+        <h2>Data</h2>
+        <p>Area: 1 285 215,60 km²</p>
+        <p>Population: 33.85 million</p>
+        <p>Capital: Lima</p>
+        <p>Languages: Spanish, Quechua, Aymara, and more.</p>
+        <p>Currency: Sol</p>
+        <p>Time Zone: GMT-5</p>
+        <p>Calling Code: +51</p>
+        <p>Internet TLD: .pe</p>
+      </div>
+      <div id="weather-content" class="content">
+        <h2>Weather</h2>
+        <img class="weather-icon" src="images/weather.svg" alt="weather icon" />
+        <p>Temperature: <span id="temperature"></span></p>
+        <p>Conditions: <span id="condition"></span></p>
+        <p>Wind: <span id="wind"></span></p>
+        <p>Wind Chill: <span id="windChill"></span></p>
+      </div>
+    </main>
+    <footer>
+      <p>©<span id="currentyear"></span> Manuel Zamalloa Peru</p>
+      <p>Last Modification <span id="lastModified"></span></p>
+    </footer>
+  </body>
+</html>
