@@ -1,13 +1,13 @@
 @media screen and (min-width: 1000px) {
   main {
     position: relative;
-
   }
-  .hero { 
+
+  .hero {
     height: 900px;
   }
 
-  .hero img { 
+  .hero img {
     height: 900px;
   }
 

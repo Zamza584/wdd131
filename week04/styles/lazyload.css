@@ -1,0 +1,16 @@
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+img {
+  display: block;
+  margin: 2rem;
+  background: black;
+  animation-name: show;
+  animation-duration: 4s;
+}
