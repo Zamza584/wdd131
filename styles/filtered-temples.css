@@ -3,6 +3,7 @@
   --primary-color: #2f4550;
   --secondary-color: #b8dbd9;
   --accent-color: #f4f4f9;
+  --shadow-color: lab(92.7% 0 -0.01 / 0.735);
 }
 
 * {
@@ -99,8 +100,8 @@ main .grid-content {
 }
 
 .grid-content section {
-  border: 1px solid var(--secondary-color);
-  box-shadow: 10px 10px var(--border-color) 20px;
+  border: 1px solid var(--accent-color);
+  box-shadow: 10px 10px 10px var(--shadow-color);
   height: 400px;
   max-width: 300px;
   border-radius: 1rem;
