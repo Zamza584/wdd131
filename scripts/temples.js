@@ -30,3 +30,4 @@ window.addEventListener("resize", () => {
       header.appendChild(xmark)
   }
 });
+
