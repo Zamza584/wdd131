@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Review</title>
     <link rel="stylesheet" href="styles/form.css" />
@@ -12,13 +12,15 @@
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <meta name="description" content="product review form" />
+    <meta name="author" content="Manuel Zamalloa" />
   </head>
   <body>
     <h1>Product Review</h1>
 
     <form action="review.html" method="get" class="product-form">
       <label for="product-select">
-        <p>Product Name</p>
+        Product Name
         <select name="product-select" id="product-select" required>
           <option disabled selected>Select a Product...</option>
         </select>
@@ -27,29 +29,29 @@
       <p>Overall Rating</p>
       <div class="rating-container">
         <label for="rate1">
-          <div>&star;</div>
+          &star;
           <input type="radio" id="rate1" name="rating" required />
         </label>
         <label for="rate2">
-          <div>&star;&star;</div>
+          &star;&star;
           <input type="radio" id="rate2" name="rating" required />
         </label>
         <label for="rate3">
-          <div>&star;&star;&star;</div>
+          &star;&star;&star;
           <input type="radio" id="rate3" name="rating" required />
         </label>
         <label for="rate4">
-          <div>&star;&star;&star;&star;</div>
+          &star;&star;&star;&star;
           <input type="radio" id="rate4" name="rating" required />
         </label>
         <label for="rate5">
-          <div>&star;&star;&star;&star;&star;</div>
+          &star;&star;&star;&star;&star;
           <input type="radio" id="rate5" name="rating" required />
         </label>
       </div>
 
       <label for="date">
-        <p>Date of Installation</p>
+        Date of Installation
         <input type="date" name="date" id="date" required />
       </label>
 
@@ -91,12 +93,12 @@
       </div>
 
       <label for="opinion">
-        <p>Written Review <span>(Optional)</span></p>
+        Written Review <span>(Optional)</span>
         <textarea name="opinion" id="opinion"></textarea>
       </label>
 
       <label for="name">
-        <p>Your Name<span> (Optional)</span></p>
+        Your Name<span> (Optional)</span>
         <input type="text" name="name" id="name" />
       </label>
 
