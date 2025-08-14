@@ -3,8 +3,9 @@
   --primary-color: #e9edc9;
   --secondary-color: #fefae0;
   --accent-color: #d4a373;
-  --accent-color2: #d4a373;
+  --accent-color2: #087105;
   --shadow-color: lab(92.7% 0 -0.01 / 0.735);
+  --shadow-color2: #404040;
 }
 
 * {
@@ -18,18 +19,26 @@ body {
 }
 
 h1 {
-  color: var(--accent-color2);
+  color: var(--shadow-color2);
+  margin: 2rem 1rem;
 }
 
 h2 {
   font-size: 1.7rem;
-  color: var(--accent-color);
 }
 
 h3 {
   font-size: 1.5rem;
-  color: var(--accent-color);
-  margin: 1rem 0 0.5rem 0;
+}
+
+h2,
+h3 {
+  color: var(--shadow-color2);
+  margin: 1rem 0;
+}
+
+ul {
+  list-style-position: inside;
 }
 
 main {
@@ -41,11 +50,52 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 4rem;
+  padding: 1rem 1rem;
+}
+
+#close-icon,
+#ham-menu {
+  padding: 0.4rem 0 0 0;
+  width: 40px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#close-icon {
+  position: fixed;
+  display: none;
+  right: 20px;
+}
+
+#close-icon.show {
+  display: block;
+  z-index: 3;
+}
+
+.close {
+  display: none;
 }
 
 nav {
   display: none;
+}
+
+nav.open {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: var(--secondary-color);
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+
+nav.open > ul {
+  top: 50%;
+  left: 35%;
+  position: absolute;
 }
 
 nav ul {
@@ -58,17 +108,7 @@ nav ul {
 nav a {
   text-decoration: none;
   font-size: 1.4rem;
-  color: var(--accent-color);
-}
-
-header > i {
-  padding: 0.4rem 0 0 0;
-  width: 40px;
-  height: 50px;
-}
-
-body h1 {
-  margin: 3rem 2rem 0 2rem;
+  color: var(--shadow-color2);
 }
 
 .hero {
@@ -77,9 +117,11 @@ body h1 {
 
 .hero img {
   width: 100%;
+  max-height: 600px;
+  object-fit: cover;
 }
 
-.hero > p {
+.hero > div {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -89,24 +131,31 @@ body h1 {
   text-shadow: 4px 4px 10px black;
 }
 
-.container {
+.container,
+.recipe-container {
   margin: 2rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
   gap: 2rem;
+  padding: 1rem;
+  word-break: break-all;
 }
 
-.container h2 {
-  margin: 1rem 0;
+.recipe-container h2 {
   width: fit-content;
 }
 
-.container img {
+.recipe-container img {
+  min-width: 400px;
+  max-width: 400px;
   width: 400px;
   height: 400px;
   object-fit: cover;
+}
+
+.about-me {
+  height: 78vh;
 }
 
 footer {

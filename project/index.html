@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Regain Health</title>
     <meta name="description" content="Regain Health Website" />
@@ -19,17 +19,16 @@
   <body>
     <header>
       <span
-        ><a href="index.html"
-          ><img src="images/logo.png" alt="logo" /></a
+        ><a href="index.html"><img src="images/logo.png" alt="logo" /></a
       ></span>
       <nav>
         <ul>
           <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="#">Peruvian Recipes</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
       </nav>
-      <i><img src="images/bars.svg" alt="hamburger bar"></i>
+      <i id="ham-menu"><img src="images/bars.svg" alt="hamburger bar" /></i>
+      <i id="close-icon"><img src="images/close.svg" alt="close" /></i>
     </header>
 
     <main>
@@ -37,106 +36,193 @@
         <picture>
           <img src="images/banner.webp" alt="#" />
         </picture>
-        <p>Learn new healthy recipes, Start healthy habits</p>
+        <div>
+          <p>Learn new healthy recipes,</p>
+          <p>Start healthy habits</p>
+        </div>
       </div>
       <h1>Recipes of the Day</h1>
-      <div class="container">
+      <div class="recipe-container">
         <div>
-          <h2>Singapore Noodles</h2>
+          <h2>Pesto Pasta</h2>
           <p>
-            A speedy, vegan stir-fry with aromatic spice and plenty of veg. Dr
-            Rupy and the BOSH! team make a flavour-packed dinner that costs
-            under £1 per portion.
+            Very quick Pesto Pasta, very simple to make. A great choice for
+            family meals
           </p>
           <h3>Ingredients</h3>
           <ul>
-            <li>150g/5½oz rice vermicelli noodles</li>
-            <li>olive oil, for frying</li>
-            <li>1 onion, thinly sliced</li>
-            <li>½ red pepper, deseeded and thinly sliced</li>
-            <li>1 parsnip, shredded or coarsely grated</li>
-            <li>½ savoy cabbage, finely shredded</li>
-            <li>2 garlic cloves, crushed</li>
-            <li>2 tsp curry powder</li>
-            <li>pinch dried chilli flakes</li>
-            <li>50g/1¾oz spring onions, thinly sliced</li>
-            <li>1 tbsp light soy sauce</li>
-            <li>1 tsp sesame oil</li>
+            <li>1 large handful fresh spinach</li>
+            <li>
+              8–12 cloves garlic (depending on your preference/size of meal)
+            </li>
+            <li>4 tbsp olive oil</li>
+            <li>100–200 g feta cheese</li>
+            <li>200 g pitted kalamata olives</li>
+            <li>1 small package of snap peas</li>
+            <li>1–2 chicken breasts (can substitute salmon or steak)</li>
+            <li>About 500 g linguine</li>
+            <li>Pesto</li>
           </ul>
           <h3>Preperation</h3>
           <ul>
             <li>
-              Soak the noodles according to the packet instructions, then drain
-              and rinse under cold running water. Set aside.
+              Lightly sauté the garlic in a pan—this is not meant to completely
+              cook it, but to take a little of the bite off of it.
             </li>
             <li>
-              Heat a splash of oil in a wok or large frying pan until smoking,
-              then add the onion, pepper and parsnip. Fry for a couple of
-              minutes until softened and lightly charred, then add the cabbage
-              and garlic and fry for a couple of minutes more.
+              Chop the garlic up a bit in a food processor, then add the spinach
+              bit by bit (stems may be left on if you like). When you have
+              completed mixing the garlic and spinach together, add the olive
+              oil and mix. Put into a bowl and set aside.
             </li>
             <li>
-              Add the curry powder and chilli flakes, fry for 30 seconds, then
-              add the soaked noodles and spring onions. Warm through.
+              Strip the snap peas of the stringy bits and the hard ends, and
+              place those aside in a bowl as well.
             </li>
-            <li>
-              Drizzle in the soy sauce and sesame oil and toss everything
-              together. Divide between warmed bowls and serve.
-            </li>
-          </ul>
-        </div>
-        <img src="images/singapore noodles.jpg" alt="singapore noodles" />
-      </div>
 
-      <div class="container">
-        <div>
-          <h2>Carrot and ginger soup</h2>
+            <li>
+              Start the water on the stove at a medium temperature to prevent
+              the water from boiling, but able to easily obtain a boil at your
+              whim. Start the grill and put the chicken (or other meat) on at a
+              medium temperature. When it has heated up, put a bit of olive oil
+              on each side to prevent sticking. When the meat is about a quarter
+              done, you want to have the water boiling. Put the linguine in, and
+              if you wish, add a bit of olive oil for flavor.
+            </li>
+
+            <li>
+              While you are doing this, put the snap peas in a small frying pan
+              with some olive oil at a low-medium temperature to warm them up a
+              bit.
+            </li>
+
+            <li>
+              When the pasta and meat are cooked (try and get these finished
+              cooking at the same time), slice the chicken into strips (in the
+              case of the steak/salmon, it may be better to just leave it in
+              fillet/steak form for presentation purposes). Strain the pasta,
+              and put it in a frying pan along with some of the pesto (by
+              portion) to heat the pesto up a bit. Make sure it is not at a high
+              temperature, as that will cause the pasta to crisp up. When you
+              have finished this, put it on a plate and top with feta and
+              olives.
+            </li>
+
+            <li>
+              Arrange the snap peas and meat strips on top as well, and there's
+              your dinner!
+            </li>
+          </ul>
           <p>
-            Quick, easy and mouthwateringly good. This carrot and ginger soup is
-            perfect for chilly afternoons. Why not make a few more portions and
-            keep in the freezer for emergencies?
+            reference:
+            <a
+              href="https://en.wikibooks.org/wiki/Cookbook:Spinach_Pesto_Linguine"
+              >https://en.wikibooks.org/wiki/Cookbook:Spinach_Pesto_Linguine</a
+            >
           </p>
-          <h3>Ingredients</h3>
-          <ul>
-            <li>1 tsp rapeseed oil</li>
-            <li>1 small onion (75g/2½oz peeled weight), finely chopped</li>
-            <li>1 garlic clove, finely chopped</li>
-            <li>20g/¾oz fresh root ginger, peeled and finely chopped</li>
-            <li>200g/7oz carrots, roughly chopped</li>
-            <li>300ml/10fl oz vegetable stock</li>
-            <li>freshly ground black pepper</li>
-            <li>1 spring onion, finely chopped, to serve</li>
-          </ul>
-          <h3>Preperation</h3>
-          <ul>
-            <li>
-              Heat the oil in small saucepan over a medium heat. Add the onion
-              and cook for 2–3 minutes. Add the garlic, ginger and carrots and
-              cook for 5 minutes, stirring occasionally.
-            </li>
-            <li>
-              Add the stock and season with pepper to taste. Bring to the boil,
-              then reduce the heat, cover and simmer for 20 minutes, or until
-              the carrots are soft.
-            </li>
-            <li>
-              Pour the soup into a food processor and blend until smooth. Return
-              to the pan and reheat gently.
-            </li>
-            <li>
-              To serve, pour the soup into a warm serving bowl and garnish with
-              the spring onions.
-            </li>
-          </ul>
         </div>
         <img
-          src="images/carrot and ginger soup.png"
-          alt="carrot and ginger soup"
+          src="images/gallery-images/pesto-pasta.webp"
+          alt="singapore noodles"
+        />
+      </div>
+
+      <div class="recipe-container">
+        <div>
+          <h2>Sunday Roast</h2>
+          <p>
+            Roast dinners are traditionally served on Sunday, but can also be
+            eaten throughout the week. The precise recipe of a roast dinner will
+            vary considerably from person to person, so below is a broad
+            overview of common elements that can be adapted and made your own.
+          </p>
+          <h3>Ingredients</h3>
+          <ul>
+            <li>
+              1 joint (about 3 pounds / 1.5 kg) of good quality beef rib or
+              rolled rib beef
+            </li>
+            <li>Extra beef bones (optional)</li>
+            <li>½ cup sifted all-purpose flour</li>
+            <li>1 teaspoon (5 ml) salt (rock salt preferred)</li>
+            <li>
+              1 pinch of ground black pepper (as much as can be held between the
+              finger/thumb)
+            </li>
+            <li>¼ cup olive oil or other good cooking oil</li>
+            <li>2 cups water</li>
+            <li>1 onion</li>
+            <li>1 glass of full-bodied red wine</li>
+            <li>
+              1 teaspoon (45 ml) red jam (mix with a little water and strain out
+              the seeds if using raspberry or blackberry)
+            </li>
+            <li>1 pinch of nutmeg</li>
+            <li>
+              1 teaspoon (5 ml) Lea and Perrin's Worcestershire sauce and/or
+              Maggi stock cube
+            </li>
+          </ul>
+          <h3>Preperation</h3>
+          <ul>
+            <li>
+              Combine some plain flour, a little rock-salt and a good pinch of
+              ground pepper.
+            </li>
+
+            <li>
+              In a large frying pan, heat some olive oil, then sear (i.e.
+              briefly fry) the fatty edges of the meat until they are a dark
+              brown colour.
+            </li>
+
+            <li>Remove joint and bones from the frying pan. Lower the heat</li>
+
+            <li>
+              Using the spare beef bones, make a 'bed' for the joint on the
+              bottom of the hot roasting tin, adding a coarsely chopped onion to
+              the bed. The idea is to keep the joint a little raised from the
+              bottom of the tin. Add a cupful of water and pour the contents of
+              the deglazed frying pan, including the onion, over the joint.
+            </li>
+
+            <li>
+              Place the joint on its bed, or on the rack Leave the meat to cook,
+              without opening the oven for about 15 minutes at 200°C (400°F).
+            </li>
+
+            <li>
+              Reduce the oven temperature to about 180°C (350°F). You no longer
+              need to baste the joint now.
+            </li>
+
+            <li>
+              Once the cooking has completed, take the joint out of the roasting
+              tin and place it on its own separate dish.
+            </li>
+
+            <li>
+              Carve thin slices of the meat. Serve with the roast potatoes, as
+              well as 3 or more side vegetables such as roast parsnips, green
+              beans, and cabbage with a little bacon.
+            </li>
+          </ul>
+          <p>
+            reference:
+            <a href="https://en.wikibooks.org/wiki/Cookbook:Roast_Beef"
+              >https://en.wikibooks.org/wiki/Cookbook:Roast_Beef</a
+            >
+          </p>
+        </div>
+        <img
+          src="images/gallery-images/sunday-roast.webp"
+          alt="sunday roast dinner"
         />
       </div>
     </main>
 
     <footer>
+      <a href="reference.html">Reference Page</a>
       <p>©<span id="currentYear"></span> Manuel Zamalloa Peru</p>
       <p>Last Modification <span id="lastModified"></span></p>
     </footer>

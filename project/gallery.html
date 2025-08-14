@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Regain Health Gallery</title>
     <meta name="description" content="Regain Health Website About Page" />
@@ -13,30 +13,32 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/regain-health.css" />
+    <link rel="stylesheet" href="styles/regain-health-large.css" />
+    <link rel="stylesheet" href="styles/gallery.css" />
     <script src="scripts/regain-health.js" defer></script>
     <script src="scripts/gallery.js" defer></script>
   </head>
   <body>
     <header>
       <span
-        ><a href="index.html"
-          ><img src="images/logo.png" alt="logo" /></a
+        ><a href="index.html"><img src="images/logo.png" alt="logo" /></a
       ></span>
       <nav>
         <ul>
           <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="#">Peruvian Recipes</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
       </nav>
+      <i id="ham-menu"><img src="images/bars.svg" alt="hamburger bar" /></i>
+      <i id="close-icon"><img src="images/close.svg" alt="close" /></i>
     </header>
-
     <main>
-      <div class="gallery-container">
-      </div>
+      <h1>Food Gallery</h1>
+      <div class="gallery-container"></div>
     </main>
 
     <footer>
+      <a href="reference.html">Reference Page</a>
       <p>©<span id="currentYear"></span> Manuel Zamalloa Peru</p>
       <p>Last Modification <span id="lastModified"></span></p>
     </footer>

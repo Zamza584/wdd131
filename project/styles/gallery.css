@@ -1,0 +1,28 @@
+body h1 {
+  margin-bottom: 2rem;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.gallery-item {
+  border: 1px solid var(--shadow-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 10px var(--shadow-color);
+}
+
+.gallery-item:hover {
+  box-shadow: 5px 5px 15px var(--shadow-color);
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
